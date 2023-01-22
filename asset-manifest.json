@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CRE_Matrix/static/css/main.adeffd01.css",
+    "main.js": "/CRE_Matrix/static/js/main.a755049c.js",
+    "static/js/787.4e614f49.chunk.js": "/CRE_Matrix/static/js/787.4e614f49.chunk.js",
+    "index.html": "/CRE_Matrix/index.html",
+    "main.adeffd01.css.map": "/CRE_Matrix/static/css/main.adeffd01.css.map",
+    "main.a755049c.js.map": "/CRE_Matrix/static/js/main.a755049c.js.map",
+    "787.4e614f49.chunk.js.map": "/CRE_Matrix/static/js/787.4e614f49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adeffd01.css",
+    "static/js/main.a755049c.js"
+  ]
+}
