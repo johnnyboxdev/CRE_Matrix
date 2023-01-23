@@ -3,10 +3,32 @@ import TableView from './TableView';
 
 const InputVariables = () => {
   const [inputValue, setInputValue] = useState(6);
+  const [expenseRatio, setExpenseRatio] = useState(45);
+  const [tableData, setTableData] = useState([]);
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
   }
+
+  const handleExpenseRatioChange = (e) => {
+    setExpenseRatio(e.target.value);
+
+    calculateData(inputValue, e.target.value);
+  }  
+
+  const calculateData = (capRate, ratio) => {
+    let results = [];
+
+    for (var i = 0; i <= 14; i++) {
+      let e = 6 - i;
+      let f = e / ( 1 - ratio / 100); 
+
+      console.log(  e );
+      results.push([e + "%", f.toFixed(1) + "%"]);
+    }
+
+    setTableData(results);
+  }  
 
   return (
     <div>
@@ -18,14 +40,14 @@ const InputVariables = () => {
           </div>
           <div className="col-2">
             Expense Ratio <br />
-            <input type="number" min="1" max="100" step="1" /> %
+            <input type="text" value={expenseRatio} onChange={handleExpenseRatioChange} /> %
           </div>
         </div>
       </div>
 
       <br />
 
-      <TableView input={inputValue} />
+      <TableView input={inputValue} expRatio={expenseRatio} tData={tableData} />
     </div>
   );
 }
