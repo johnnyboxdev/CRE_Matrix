@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import TableView from './TableView';
 
 const InputVariables = () => {
-  const [inputValue, setInputValue] = useState(6);
-  const [expenseRatio, setExpenseRatio] = useState(45);
+  const [inputValue, setInputValue] = useState(0);
+  const [expenseRatio, setExpenseRatio] = useState(0);
   const [tableData, setTableData] = useState([]);
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
+    calculateData(e.target.value, expenseRatio);
   }
 
   const handleExpenseRatioChange = (e) => {
