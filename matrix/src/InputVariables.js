@@ -44,15 +44,15 @@ const InputVariables = () => {
 
       console.log(  e );
       results.push([
-        e + "%", 
-        f.toFixed(1) + "%",
-        f.toFixed(1) + "%",
-        ( j * 100 ).toFixed(1) + "%",
-        ( k * 100 ).toFixed(1) + "%",
-        ( l * 100 ).toFixed(1) + "%",
-        ( m * 100 ).toFixed(1) + "%",
-        ( n * 100 ).toFixed(1) + "%",
-        ( o * 100 ).toFixed(1) + "%"
+        e,
+        parseFloat(f.toFixed(1)),
+        parseFloat(f.toFixed(1)),
+        parseFloat(( j * 100 ).toFixed(1)),
+        parseFloat(( k * 100 ).toFixed(1)),
+        parseFloat(( l * 100 ).toFixed(1)),
+        parseFloat(( m * 100 ).toFixed(1)),
+        parseFloat(( n * 100 ).toFixed(1)),
+        parseFloat(( o * 100 ).toFixed(1)),
       ]);
     }
 

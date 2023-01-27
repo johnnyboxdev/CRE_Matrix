@@ -1,6 +1,19 @@
 import React from 'react';
 
 const Table = (props) => {
+
+  const minValue = Math.min(...props.data.flat());
+  const maxValue = Math.max(...props.data.flat());
+  console.log(props.data.flat());
+  console.log(minValue + " < " + maxValue);
+
+  const getCellColor = (value) => {
+    
+    const ratio = (value - minValue) / (maxValue - minValue);
+    const hue = 120 * ratio - 60; // hue for green and red colors
+    return `hsl(${hue}, 100%, 50%)`;
+  };
+
   return (
     <table>
       <thead>
@@ -11,7 +24,7 @@ const Table = (props) => {
       <tbody>
         {props.data.map((row, index) => (
           <tr key={index}>
-            {row.map((cell, index) => <td key={index}>{cell}</td>)}
+            {row.map((cell, index) => <td key={index} style={{ backgroundColor: getCellColor(cell) }}>{cell}%</td>)}
           </tr>
         ))}
       </tbody>
