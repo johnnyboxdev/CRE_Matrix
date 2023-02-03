@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CRE_Matrix/static/css/main.adeffd01.css",
-    "main.js": "/CRE_Matrix/static/js/main.aae5249e.js",
+    "main.css": "/CRE_Matrix/static/css/main.9447b30e.css",
+    "main.js": "/CRE_Matrix/static/js/main.6283a8e2.js",
     "static/js/787.4e614f49.chunk.js": "/CRE_Matrix/static/js/787.4e614f49.chunk.js",
     "index.html": "/CRE_Matrix/index.html",
-    "main.adeffd01.css.map": "/CRE_Matrix/static/css/main.adeffd01.css.map",
-    "main.aae5249e.js.map": "/CRE_Matrix/static/js/main.aae5249e.js.map",
+    "main.9447b30e.css.map": "/CRE_Matrix/static/css/main.9447b30e.css.map",
+    "main.6283a8e2.js.map": "/CRE_Matrix/static/js/main.6283a8e2.js.map",
     "787.4e614f49.chunk.js.map": "/CRE_Matrix/static/js/787.4e614f49.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.adeffd01.css",
-    "static/js/main.aae5249e.js"
+    "static/css/main.9447b30e.css",
+    "static/js/main.6283a8e2.js"
   ]
 }
