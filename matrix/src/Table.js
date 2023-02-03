@@ -10,8 +10,8 @@ const Table = (props) => {
   const getCellColor = (value) => {
     
     const ratio = (value - minValue) / (maxValue - minValue);
-    const hue = 120 * ratio - 60; // hue for green and red colors
-    return `hsl(${hue}, 100%, 50%)`;
+    const hue = 131 * ratio; // hue for green and red colors
+    return `hsl(${hue}, 89%, 41%)`;
   };
 
   return (

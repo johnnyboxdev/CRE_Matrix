@@ -1,11 +1,14 @@
-.InputVariables .container {
+.InputVariables .container, .widget_container {
   display: flex;
 }
-.col-1 {
+.col-5 {
   width: 50%;
 }
-.col-2 {
-  width: 50%;
+.col-1 {
+  width: 10%;
+}
+.col-9 {
+  width: 90%;
 }
 
 table {
@@ -15,10 +18,15 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: none;
   padding: 8px;
   text-align: left;
 }
+
+table td:nth-child(2),table th:nth-child(2) {
+  border-right: 1px solid black;
+}
+
 
 th {
   background-color: #ddd;

@@ -63,11 +63,11 @@ const InputVariables = () => {
     <div>
       <div className="InputVariables">
         <div className="container">
-          <div className="col-1">
+          <div className="col-5">
             Cap Rate Start <br />
             <input type="text" value={inputValue} onChange={handleChange} /> Cap Avg
           </div>
-          <div className="col-2">
+          <div className="col-5">
             Expense Ratio <br />
             <input type="text" value={expenseRatio} onChange={handleExpenseRatioChange} /> %
           </div>
